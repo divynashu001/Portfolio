@@ -1,5 +1,8 @@
+import emailjs from "@emailjs/browser";
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaArrowUp } from "react-icons/fa";
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,11 +15,31 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const templateParams = {
+    to_name: "Tanuj",
+    from_name: formData.name,
+    from_email: formData.email,
+    message: formData.message
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted", formData);
-    // Here you can integrate EmailJS or a backend service
-    setFormData({ name: "", email: "", message: "" }); // Reset form
+   emailjs
+  .send(
+    import.meta.env.VITE_SERVICE_ID,
+    import.meta.env.VITE_TEMPLATE_ID,
+    templateParams,
+    import.meta.env.VITE_PUBLIC_KEY
+  )
+  .then(
+    () => {
+      console.log("Form Submitted", formData);
+      setFormData({ name: "", email: "", message: "" });
+    },
+    (error) => {
+      console.log("FAILED...", error);
+    }
+  );
+    
   };
 
   return (
