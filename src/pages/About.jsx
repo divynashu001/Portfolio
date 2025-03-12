@@ -19,7 +19,7 @@ export default function About() {
       </div>
       <div className="mt-6 animate-fadeIn delay-400">
         <a href="#projects" className="px-6 py-3 bg-blue-600 rounded-2xl text-white hover:bg-blue-500 transition">
-          View My Projects
+          My Projects
         </a>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Home() {
         </p>
         <div className="flex space-x-4 animate-fadeIn delay-600">
           <a href="#projects" className="px-6 py-3 bg-blue-600 rounded-2xl text-white hover:bg-blue-500 transition">
-            View My Work
+            View My Projects
           </a>
           <a href="#contact" className="px-6 py-3 border border-white rounded-2xl hover:bg-white hover:text-gray-900 transition">
             Hire Me
