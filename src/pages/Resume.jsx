@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
-import resumePDF from "../assets/DivyanshuDhiman_MernResume.pdf"; // Ensure your resume is in the assets folder
+import resumePDF from "../assets/DivyanshuDhiman_Resume.pdf"; // Ensure your resume is in the assets folder
 
 const Resume = () => {
   return (
