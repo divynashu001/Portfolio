@@ -51,10 +51,10 @@ const Project = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-80 bg-black rounded-md shadow-lg hover:scale-105 shadow-blue-400 transition-transform duration-500"
+            className="w-80 bg-black p-1 rounded-md shadow-lg hover:scale-105 shadow-blue-400 transition-transform duration-500"
           >
             <img
-              className="h-48 w-full object-cover rounded-t-md"
+              className="h-48 w-full object-left-top rounded-t-md"
               src={project.image}
               alt={project.title}
             />
