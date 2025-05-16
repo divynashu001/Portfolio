@@ -115,7 +115,7 @@ const Contact = () => {
 
           <div className="flex justify-center gap-6 text-3xl">
             <a
-              href="https://linkedin.com/in/divyanshu-dhiman"
+              href="https://www.linkedin.com/in/divyanshudhiman/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-fuchsia-500 transition"
