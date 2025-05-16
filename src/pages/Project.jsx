@@ -1,6 +1,7 @@
 import auth from "../assets/Authentication.png";
 import crud from "../assets/Crud.png";
 import car from "../assets/Car.png";
+import blog from "../assets/BlogSphere.png"
 
 const Project = () => {
   const projects = [
@@ -11,6 +12,14 @@ const Project = () => {
         "Built a secure authentication system using JWT, bcrypt for password hashing, and Joi validation. Includes protected routes and CORS setup.",
       liveLink: "https://auht.vercel.app/",
       codeLink: "https://github.com/divynashu001/Auht-0",
+    },
+    {
+      image: blog,
+      title: "BlogSphere",
+      description:
+        "Developed a full-stack Blog app with React, Node.js, and Express.js. Uses RESTful APIs, and Axios for seamless data management.",
+      liveLink: "https://blog-sphere-ashy.vercel.app/",
+      codeLink: "https://github.com/divynashu001/BlogSphere",
     },
     {
       image: crud,
